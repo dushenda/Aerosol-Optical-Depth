@@ -1,0 +1,21 @@
+function [y,m,d,h,min,sec,lon,lat,pre,tem] = readFile(data)
+y = data(:,1);
+m = data(:,2);
+d = data(:,3);
+h = data(:,4);
+min = data(:,5);
+sec = data(:,6);
+lon = data(:,7);
+lat = data(:,8);
+pre = data(:,9);
+tem = data(:,10);
+y=y';
+m=m';
+d=d';
+h=h';
+min=min';
+sec=sec';
+lon=lon';
+pre=pre';
+tem=tem';
+end
