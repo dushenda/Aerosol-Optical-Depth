@@ -1,20 +1,5 @@
-function []=Al1(varargin)
-%函数调用：
-%1.输入一个句柄函数是Al1(handle)
-%2.输入数组和方位函数是Al1(data,signNS,addEW)
-narginchk(1,3);
-if nargin==1
-h1 = varargin{1};
-[y,m,d,h,min,sec,lon,lat,pre,tem]=getPara(h1);
-elseif nargin==3
-data = varargin{1};
-addEW = varargin{2};
-signNS = varargin{3};
-[y,m,d,h,min,sec,lon,lat,pre,tem]=readFile(data);
-lon = lon+addEW;
-lat = signNS*lat;
-end
-
+function [GammaAngle,zAngle] = reportFun1(data)
+[y,m,d,h,min,sec,lon,lat,pre,tem] = readFile(data);
 %需要转化为的数值或者其他常量
 [theta,phi,omega,t,te]=Preprocess(y,m,d,h,min,sec,lon,lat);
 %算法第一步，计算s1=sin(omega*te),c1=cos(omega*te);
@@ -37,15 +22,5 @@ H = 1.75283+6.3003881*t+theta-alpha;
 H = mod(H+pi,2*pi)-pi;
 HAngle = H*180/pi;                                        %转角度输出
 % %Final Step,几个算法都一样的
-[GammaAngle,zAngle]=finalStep(phi,delta,H,tem,pre);
-
-if nargin==1
-outputPara(h1,alphaAngle,deltaAngle,HAngle,GammaAngle,zAngle);
-elseif nargin==3
-GammaAngle=GammaAngle(1,:);
-zAngle=zAngle(1,:);
-dataout = [alphaAngle;deltaAngle;HAngle;zAngle;GammaAngle];
-dataout = dataout';
-xlswrite('output',dataout);
-end
+[GammaAngle,zAngle]=finalStep2(phi,delta,H,tem,pre);
 end

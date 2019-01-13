@@ -3,6 +3,8 @@ data=xlsread('output');
 y1=data(:,4);               %计算的数据
 y2=data(:,6);               %给的标准数据
 deltay=y2-y1;               %计算差值
+volume=max(size(y1));
+y1(volume)=[];y2(volume)=[];deltay(volume)=[];
 %读入文件
 fileID = fopen('C:\Users\dushenda\Desktop\new.txt');
 C = textscan(fileID,'%f %1s %f %1s %f %f %1s %f %1s %f %f');
