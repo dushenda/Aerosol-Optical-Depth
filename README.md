@@ -7,7 +7,7 @@
 
 对于五种算法的误差进行了比较，然后得到较优的算法，采取它进行计算。
 
-![](https://github.com/dushenda/JOB/img/huang.bmp)
+![image](https://github.com/dushenda/JOB/img/huang.bmp)
 
 ​										图 1.1  算法0的误差
 
