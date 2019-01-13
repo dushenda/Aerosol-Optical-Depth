@@ -19,7 +19,7 @@
 
 ##### 算法的最终结果
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/huang.bmp)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/huang.bmp)
 
 ​										图 1.1  算法0的误差
 
@@ -27,7 +27,7 @@
 
 #### 前处理部分
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/Δτ.png)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/Δτ.png)
 
 Δτ的计算是根据上图用插值法计算的一个线性表达式
 $$
@@ -36,7 +36,7 @@ t=\Delta day=(year_{now}-2060)\times365.2425
 $$
 参数解释:
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/Al5table.png)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/Al5table.png)
 
 根据实际情况，确定了一些参数
 
@@ -49,24 +49,24 @@ $$
 
 在计算过程中，如果月份 m<2，那么把月份加 12，年份减 1，这里的 INT 是表示向 0 取整。前处理过程如下：
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/PreProcess.png)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/PreProcess.png)
 $$
 \omega=0.017202786day^{-1}
 $$
 
 #### 后角度计算部分
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep (1).png)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/Finalstep (1).png)
 
-![Finalstep (2)](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep (2).png)
+![Finalstep (2)](https://github.com/dushenda/OpticalDepth/tree/master/img/Finalstep (2).png)
 
-![Finalstep (3)](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep (3).png)
+![Finalstep (3)](https://github.com/dushenda/OpticalDepth/tree/master/img/Finalstep (3).png)
 
-![Finalstep (4)](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep (4).png)
+![Finalstep (4)](https://github.com/dushenda/OpticalDepth/tree/master/img/Finalstep (4).png)
 
-![Finalstep (5)](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep (5).png)
+![Finalstep (5)](https://github.com/dushenda/OpticalDepth/tree/master/img/Finalstep (5).png)
 
-![Finalstep (6)](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep (6).png)
+![Finalstep (6)](https://github.com/dushenda/OpticalDepth/tree/master/img/Finalstep (6).png)
 
 计算时只需要知道 <u>纬度、赤经、赤纬、时角</u> 即可。
 
@@ -74,11 +74,11 @@ $$
 
 #### 算法的计算步骤
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/Al1.png)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/Al1.png)
 
 #### 算法的结果
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/第一种算法.bmp)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/第一种算法.bmp)
 
 ​										图 1.2  算法1的误差
 
@@ -88,11 +88,11 @@ $$
 
 #### 算法的步骤
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/Al2.png)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/Al2.png)
 
 #### 算法的结果
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/第二种算法.bmp)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/第二种算法.bmp)
 
 ​										图 1.3  算法2的误差
 
@@ -104,11 +104,11 @@ $$
 
 #### 算法的步骤
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/Al3.png)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/Al3.png)
 
 #### 算法的结果
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/第三种算法.bmp)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/第三种算法.bmp)
 
 ​										图 1.4  算法3的误差
 
@@ -118,13 +118,13 @@ $$
 
 #### 算法步骤
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/Al4(1).png)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/Al4(1).png)
 
-![Al4(2)](https://github.com/dushenda/OpticalDepth/raw/master/img/Al4(2).png)
+![Al4(2)](https://github.com/dushenda/OpticalDepth/tree/master/img/Al4(2).png)
 
 #### 算法结果
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/第四种算法.bmp)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/第四种算法.bmp)
 
 ​										图 1.5  算法4的误差
 
@@ -134,17 +134,17 @@ $$
 
 #### 算法步骤
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/Al5(2).png)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/Al5(2).png)
 
-![Al5](https://github.com/dushenda/OpticalDepth/raw/master/img/Al5.png)
+![Al5](https://github.com/dushenda/OpticalDepth/tree/master/img/Al5.png)
 
 参数如下：
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/Al5table.png)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/Al5table.png)
 
 #### 算法结果
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/第五种算法.bmp)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/第五种算法.bmp)
 
 ​										图 1.6  算法5的误差
 
@@ -152,11 +152,11 @@ $$
 
 #### 分析一下8月7日
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/算法5_8月7日角度值.bmp)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/算法5_8月7日角度值.bmp)
 
 ​										图 1.7  计算的天顶角
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/算法5_8月7日误差散点.bmp)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/算法5_8月7日误差散点.bmp)
 
 ​										图 1.8  天顶角计算误差
 
@@ -164,7 +164,7 @@ $$
 
 ​	第二张图和第一张图结合看其实是能看出来一点东西的，看到其实到了6点左右也是天顶角最小，这也是说明这时候高度角最大，太阳在比较高的地方，这时候计算的误差是小的，在00：00和12：00处误差也较大。
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/算法5_8月7日分布图.bmp)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/算法5_8月7日分布图.bmp)
 
 ​										图 1.9  天顶角误差分布
 
@@ -172,11 +172,11 @@ $$
 
 ### 总结
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/算法1~算法4.bmp)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/算法1~算法4.bmp)
 
 ​											图 1.10  计算汇总 1
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/算法0和算法5.bmp)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/算法0和算法5.bmp)
 
 ​											图 1.11  计算汇总2
 
@@ -222,7 +222,7 @@ $$
 
 ​										表 1  已知参数
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/表格1.png)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/表格1.png)
 
 ​	根据以上的式子 (1),(2) 和已知的参数表1。要计算这个定积分，那就还需要知道 ρ, 也就是 ρ(h) 在高度 h 处的大气密度，但是我在文献中找不到，这是个问题，不知道是不是需要再去别的地方找这个 ρ，看完了这篇文章之后，知道了这个 ρ 还是没有找到，但是文章已经给出了计算得到的结果的表格。
 
@@ -262,25 +262,25 @@ $$
 
 ​	在这篇文章里面，我要做的就是编写一个程序，根据文献中的大气质量近似公式(3)，并且用不同的参数组带入，将表格中自变量太阳高度角γ作为自变量带入近似公式计算，再与表格中所给的大气质量数进行作差比较，即验证这个算法是否真的符合实际，如果误差较小，则可以用到我们的项目中去。
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/表格2.png)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/表格2.png)
 
 ​	上面的这张表格也就说明了在文章计算的数据中天顶角γ的取值变化，也就是计算的时候自变量所采用的值。过计算得到了一些结果。
 
 ### 结果
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/几种方法计算的大气质量.bmp)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/几种方法计算的大气质量.bmp)
 
 ​							      图 2.1  标准大气质量和用其他公式计算的大气质量
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/几种方法计算的大气质量.bmp)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/几种方法计算的大气质量.bmp)
 
 ​									图 2.2  四种计算方法与标准大气质量
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/三种计算方法计算的值.bmp)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/三种计算方法计算的值.bmp)
 
 ​									图 2.3  三种拟合系数计算的大气质量
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/几种方法计算的大气质量的误差值.bmp)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/几种方法计算的大气质量的误差值.bmp)
 
 ​											图 2.4  误差曲线
 
@@ -292,13 +292,13 @@ $$
 
 ​	可以看看在高度角大于10°时候的表现。
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/高度角大于10°的大气质量误差.bmp)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/高度角大于10°的大气质量误差.bmp)
 
 ​							图 2.5  在高度角大于10°时候计算大气质量的误差
 
 ​	这里没有找到拟合系数1这条曲线，是因为他的变化与公式计算的是一模一样的，两条线是重合的。
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/找拟合系数1这条线.bmp)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/找拟合系数1这条线.bmp)
 
 ​						图 2.6  拟合系数1和公式计算的天顶角大于10°的误差曲线
 
@@ -312,7 +312,7 @@ $$
 
 ​	在之后使用已经写好的这几种计算方法来计算新的数据值，数据可以在 ‘1.xlsx’ 表格中找到。
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/8月6号到8号计算的大气质量值.bmp)
+![image](https://github.com/dushenda/OpticalDepth/tree/master/img/8月6号到8号计算的大气质量值.bmp)
 
 ​						图 2.7  根据所给的数据计算的三天的大气质量数值
 
