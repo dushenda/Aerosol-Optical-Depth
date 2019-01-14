@@ -56,17 +56,17 @@ $$
 
 #### 后角度计算部分
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep (1).png)
+![image](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep1).png)
 
-![Finalstep (2)](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep (2).png)
+![Finalstep (2)](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep2.png)
 
-![Finalstep (3)](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep (3).png)
+![Finalstep (3)](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep3.png)
 
-![Finalstep (4)](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep (4).png)
+![Finalstep (4)](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep4.png)
 
-![Finalstep (5)](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep (5).png)
+![Finalstep (5)](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep5.png)
 
-![Finalstep (6)](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep (6).png)
+![Finalstep (6)](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep6.png)
 
 计算时只需要知道 <u>纬度、赤经、赤纬、时角</u> 即可。
 
