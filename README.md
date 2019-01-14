@@ -30,10 +30,9 @@
 ![image](https://github.com/dushenda/OpticalDepth/raw/master/img/Δτ.png)
 
 Δτ的计算是根据上图用插值法计算的一个线性表达式
-$$
-\Delta\tau=96.4+0.00158t\\
-t=\Delta day=(year_{now}-2060)\times365.2425
-$$
+
+![20190114102228](https://github.com/dushenda/OpticalDepth/raw/master/img/20190114102228.png)
+
 参数解释:
 
 ![image](https://github.com/dushenda/OpticalDepth/raw/master/img/Al5table.png)
@@ -50,13 +49,12 @@ $$
 在计算过程中，如果月份 m<2，那么把月份加 12，年份减 1，这里的 INT 是表示向 0 取整。前处理过程如下：
 
 ![image](https://github.com/dushenda/OpticalDepth/raw/master/img/PreProcess.png)
-$$
-\omega=0.017202786day^{-1}
-$$
+
+![20190114102237](https://github.com/dushenda/OpticalDepth/raw/master/img/20190114102237.png)
 
 #### 后角度计算部分
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep1).png)
+![image](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep1.png)
 
 ![Finalstep (2)](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep2.png)
 
@@ -212,13 +210,7 @@ https://www.sciencedirect.com/science/article/pii/S0038092X12000400
 
 ### 一个通用的公式引入
 
-$$
-m(\gamma)=\frac{m_{abs}(\gamma)}{m_{abs}(90^{\circ})}\\
-m_{abs}(\gamma)=\rho_{0}\int^{\infty}_{0} \frac{\rho}{\rho_{0}}([1-[1+2\delta_{0}(1-\frac{\rho}{\rho_{0}})]]\times
-	[\frac{\cos \gamma}{1+\frac{h}{R}}]^{2})^{-\frac{1}{2}}dh\\
-	h是相对于海平面的平均高度；\\
-	\rho=\rho(h)，是在高度h处的大气质量；
-$$
+![20190114102257](https://github.com/dushenda/OpticalDepth/raw/master/img/20190114102257.png)
 
 ​										表 1  已知参数
 
@@ -228,19 +220,13 @@ $$
 
 ### 近似计算公式和不同的系数
 
-$$
-f(\gamma)=[\sin \gamma+a(\gamma+b)^{-c}]^{-1}\\
-\gamma是高度角，单位是^\circ;\\
-f(\gamma)是用近似公式计算的m(\gamma);\\
-a,b,c是式子的常数，a=0.1500，b=3.885^{\circ}，c=1.253;
-$$
+![20190114102311](https://github.com/dushenda/OpticalDepth/raw/master/img/20190114102311.png)
 
 a,b,c这三个常数决定于最小二乘法的相对误差，也就是用前面的计算公式计算数据之后，用最小二乘法进行拟合，使用(3)的形式来计算三个常数。
 
 ​	文献后面又介绍了两个不同的参数组合，一个是根据非线性最小二乘法计算的 a=0.50572,b=6.07995°, c=1.6364；一个是根据 Bemporad 的经典大气质量表确定的，a=0.6556,b=6.379°,c=1.757[1]，其中文献的表中的r(γ)是根据公式(4)计算的相对误差，用来衡量计算大气质量的相对误差。
-$$
-r(\gamma)=\frac{f(\gamma)-m(\gamma)}{m(\gamma)}
-$$
+
+![20190114102319](https://github.com/dushenda/OpticalDepth/raw/master/img/20190114102319.png)
 
 ### 积分问题和解决
 
@@ -252,9 +238,7 @@ $$
 
 ### 一个计算公式
 
-$$
-m=\frac{1}{cos \frac{\pi \theta_0}{180^\circ}+0.15\times(93.885-\theta_0)^{-1.253}}
-$$
+![20190114102332](https://github.com/dushenda/OpticalDepth/raw/master/img/20190114102332.png)
 
 ​	其中m是需要计算的大气质量，θ`0`是天顶角。
 
