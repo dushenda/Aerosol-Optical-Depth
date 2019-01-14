@@ -68,7 +68,7 @@
 
 ![Finalstep (6)](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep6.png)
 
-计算时只需要知道*纬度、赤经、赤纬、时角* 即可。
+计算时只需要知道***纬度、赤经、赤纬、时角*** 即可。
 
 ### 第一种算法
 
