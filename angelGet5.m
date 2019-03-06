@@ -1,7 +1,7 @@
-function [GammaAngle,zAngle] = reportFun5(data)
-[y,m,d,h,min,sec,lon,lat,pre,tem]=readFile(data);
-%需要转化为的数值或者其他常量
-[theta,phi,~,t,te]=Preprocess(y,m,d,h,min,sec,lon,lat);
+function [GammaAngle,zAngle] = angelGet5(DateTime)
+[lon,lat,pre,tem] = definePara();
+[y,m,d,H,M,S] = timeGet(DateTime);
+[theta,phi,~,t,te] = Preprocess(y,m,d,H,M,S,lon,lat);
 %确定常数
 L0 = 1.7527901;
 L1 = 1.7202792159*10^(-2);
@@ -46,8 +46,10 @@ H = mod(H+pi*ones(1,volume),2*pi)-pi*ones(1,volume);
 % alphaAngle=alpha*180/pi;
 [GammaAngle,zAngle]=finalStep(phi,delta,H,tem,pre);
 [zrow,zcol] = size(zAngle);
-if(zrow>1 && zcol>1)
+if(zrow>1&&zcol>1)
     zAngle = zAngle(1,:);
     GammaAngle = GammaAngle(1,:);
 end
+% zAngle(find(zAngle>90)) = zAngle(find(zAngle>90)) - 90;
+% zAngle = zAngle - (zAngle>90)*90;
 end
