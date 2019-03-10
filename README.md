@@ -1,4 +1,4 @@
-# 大气光学厚度
+# 气溶胶光学厚度
 ​	计算了太阳天顶角和大气质量，再对其进行计算，分析误差。
 
 [TOC]
@@ -21,7 +21,7 @@
 
 #### 算法的最终结果
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/huang.bmp)
+![image](./img/huang.bmp)
 
 ​										图 1.1  算法0的误差
 
@@ -29,15 +29,15 @@
 
 #### 前处理部分
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/Δτ.png)
+![image](./img/Δτ.png)
 
 Δτ的计算是根据上图用插值法计算的一个线性表达式
 
-![20190114102228](https://github.com/dushenda/OpticalDepth/raw/master/img/20190114102228.png)
+![20190114102228](./img/20190114102228.png)
 
 参数解释:
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/Al5table.png)
+![image](./img/Al5table.png)
 
 根据实际情况，确定了一些参数
 
@@ -50,23 +50,23 @@
 
 在计算过程中，如果月份 m<2，那么把月份加 12，年份减 1，这里的 INT 是表示向 0 取整。前处理过程如下：
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/PreProcess.png)
+![image](./img/PreProcess.png)
 
-![20190114102237](https://github.com/dushenda/OpticalDepth/raw/master/img/20190114102237.png)
+![20190114102237](./img/20190114102237.png)
 
 #### 后角度计算部分
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep1.png)
+![image](./img/Finalstep1.png)
 
-![Finalstep (2)](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep2.png)
+![Finalstep (2)](./img/Finalstep2.png)
 
-![Finalstep (3)](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep3.png)
+![Finalstep (3)](./img/Finalstep3.png)
 
-![Finalstep (4)](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep4.png)
+![Finalstep (4)](./img/Finalstep4.png)
 
-![Finalstep (5)](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep5.png)
+![Finalstep (5)](./img/Finalstep5.png)
 
-![Finalstep (6)](https://github.com/dushenda/OpticalDepth/raw/master/img/Finalstep6.png)
+![Finalstep (6)](./img/Finalstep6.png)
 
 计算时只需要知道**纬度、赤经、赤纬、时角** 即可。
 
@@ -74,11 +74,11 @@
 
 #### 算法的计算步骤
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/Al1.png)
+![image](./img/Al1.png)
 
 #### 算法的结果
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/第一种算法.bmp)
+![image](./img/第一种算法.bmp)
 
 ​										图 1.2  算法1的误差
 
@@ -88,11 +88,11 @@
 
 #### 算法的步骤
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/Al2.png)
+![image](./img/Al2.png)
 
 #### 算法的结果
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/第二种算法.bmp)
+![image](./img/第二种算法.bmp)
 
 ​										图 1.3  算法2的误差
 
@@ -104,11 +104,11 @@
 
 #### 算法的步骤
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/Al3.png)
+![image](./img/Al3.png)
 
 #### 算法的结果
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/第三种算法.bmp)
+![image](./img/第三种算法.bmp)
 
 ​										图 1.4  算法3的误差
 
@@ -118,13 +118,13 @@
 
 #### 算法步骤
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/Al4(1).png)
+![image](./img/Al4(1).png)
 
-![Al4(2)](https://github.com/dushenda/OpticalDepth/raw/master/img/Al4(2).png)
+![Al4(2)](./img/Al4(2).png)
 
 #### 算法结果
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/第四种算法.bmp)
+![image](./img/第四种算法.bmp)
 
 ​										图 1.5  算法4的误差
 
@@ -134,17 +134,17 @@
 
 #### 算法步骤
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/Al5(2).png)
+![image](./img/Al5(2).png)
 
-![Al5](https://github.com/dushenda/OpticalDepth/raw/master/img/Al5.png)
+![Al5](./img/Al5.png)
 
 参数如下：
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/Al5table.png)
+![image](./img/Al5table.png)
 
 #### 算法结果
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/第五种算法.bmp)
+![image](./img/第五种算法.bmp)
 
 ​										图 1.6  算法5的误差
 
@@ -152,11 +152,11 @@
 
 #### 分析一下8月7日
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/算法5_8月7日角度值.bmp)
+![image](./img/算法5_8月7日角度值.bmp)
 
 ​										图 1.7  计算的天顶角
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/算法5_8月7日误差散点.bmp)
+![image](./img/算法5_8月7日误差散点.bmp)
 
 ​										图 1.8  天顶角计算误差
 
@@ -164,7 +164,7 @@
 
 ​	第二张图和第一张图结合看其实是能看出来一点东西的，看到其实到了**6点**左右也是天顶角最小，这也是说明这时候高度角最大，太阳在比较高的地方，这时候计算的误差是小的，在**00：00和12：00**处误差也较大。
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/算法5_8月7日分布图.bmp)
+![image](./img/算法5_8月7日分布图.bmp)
 
 ​										图 1.9  天顶角误差分布
 
@@ -172,11 +172,11 @@
 
 ### 总结
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/算法1~算法4.bmp)
+![image](./img/算法1~算法4.bmp)
 
 ​											图 1.10  计算汇总 1
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/算法0和算法5.bmp)
+![image](./img/算法0和算法5.bmp)
 
 ​											图 1.11  计算汇总2
 
@@ -212,23 +212,23 @@ https://www.sciencedirect.com/science/article/pii/S0038092X12000400
 
 ### 一个通用的公式引入
 
-![20190114102257](https://github.com/dushenda/OpticalDepth/raw/master/img/20190114102257.png)
+![20190114102257](./img/20190114102257.png)
 
 ​										表 1  已知参数
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/表格1.png)
+![image](./img/表格1.png)
 
 ​	根据以上的式子 (1),(2) 和已知的参数表1。要计算这个定积分，那就还需要知道 ρ, 也就是 ρ(h) 在高度 h 处的大气密度，但是我在文献中找不到，这是个问题，不知道是不是需要再去别的地方找这个 ρ，看完了这篇文章之后，知道了这个 ρ 还是没有找到，但是文章已经给出了计算得到的结果的表格。
 
 ### 近似计算公式和不同的系数
 
-![20190114102311](https://github.com/dushenda/OpticalDepth/raw/master/img/20190114102311.png)
+![20190114102311](./img/20190114102311.png)
 
 a,b,c这三个常数决定于最小二乘法的相对误差，也就是用前面的计算公式计算数据之后，用最小二乘法进行拟合，使用(3)的形式来计算三个常数。
 
 ​	文献后面又介绍了两个不同的参数组合，一个是根据非线性最小二乘法计算的 a=0.50572,b=6.07995°, c=1.6364；一个是根据 Bemporad 的经典大气质量表确定的，a=0.6556,b=6.379°,c=1.757[1]，其中文献的表中的r(γ)是根据公式(4)计算的相对误差，用来衡量计算大气质量的相对误差。
 
-![20190114102319](https://github.com/dushenda/OpticalDepth/raw/master/img/20190114102319.png)
+![20190114102319](./img/20190114102319.png)
 
 ### 积分问题和解决
 
@@ -240,7 +240,7 @@ a,b,c这三个常数决定于最小二乘法的相对误差，也就是用前面
 
 ### 一个计算公式
 
-![20190114102332](https://github.com/dushenda/OpticalDepth/raw/master/img/20190114102332.png)
+![20190114102332](./img/20190114102332.png)
 
 ​	其中m是需要计算的大气质量，θ`0`是天顶角。
 
@@ -248,25 +248,25 @@ a,b,c这三个常数决定于最小二乘法的相对误差，也就是用前面
 
 ​	在这篇文章里面，我要做的就是编写一个程序，根据文献中的大气质量近似公式(3)，并且用不同的参数组带入，将表格中自变量太阳高度角γ作为自变量带入近似公式计算，再与表格中所给的大气质量数进行作差比较，即验证这个算法是否真的符合实际，如果误差较小，则可以用到我们的项目中去。
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/表格2.png)
+![image](./img/表格2.png)
 
 ​	上面的这张表格也就说明了在文章计算的数据中天顶角γ的取值变化，也就是计算的时候自变量所采用的值。过计算得到了一些结果。
 
 ### 结果
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/几种方法计算的大气质量.bmp)
+![image](./img/几种方法计算的大气质量.bmp)
 
 ​							      图 2.1  标准大气质量和用其他公式计算的大气质量
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/几种方法计算的大气质量.bmp)
+![image](./img/几种方法计算的大气质量.bmp)
 
 ​									图 2.2  四种计算方法与标准大气质量
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/三种计算方法计算的值.bmp)
+![image](./img/三种计算方法计算的值.bmp)
 
 ​									图 2.3  三种拟合系数计算的大气质量
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/几种方法计算的大气质量的误差值.bmp)
+![image](./img/几种方法计算的大气质量的误差值.bmp)
 
 ​											图 2.4  误差曲线
 
@@ -278,13 +278,13 @@ a,b,c这三个常数决定于最小二乘法的相对误差，也就是用前面
 
 ​	可以看看在高度角大于10°时候的表现。
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/高度角大于10°的大气质量误差.bmp)
+![image](./img/高度角大于10°的大气质量误差.bmp)
 
 ​							图 2.5  在高度角大于10°时候计算大气质量的误差
 
 ​	这里没有找到拟合系数1这条曲线，是因为他的变化与公式计算的是一模一样的，两条线是重合的。
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/找拟合系数1这条线.bmp)
+![image](./img/找拟合系数1这条线.bmp)
 
 ​						图 2.6  拟合系数1和公式计算的天顶角大于10°的误差曲线
 
@@ -298,7 +298,7 @@ a,b,c这三个常数决定于最小二乘法的相对误差，也就是用前面
 
 ​	在之后使用已经写好的这几种计算方法来计算新的数据值，数据可以在 ‘1.xlsx’ 表格中找到。
 
-![image](https://github.com/dushenda/OpticalDepth/raw/master/img/8月6号到8号计算的大气质量值.bmp)
+![image](./img/8月6号到8号计算的大气质量值.bmp)
 
 ​						图 2.7  根据所给的数据计算的三天的大气质量数值
 
@@ -319,6 +319,80 @@ Refraction and Comparison with Previous Tables," in Proceed-ings, Second Troposp
 McCartney, GaussFit:A System for Least Squares and RobustEstimation (U. Texas at Austin, 1989).
 [9] A.T.Young,Observational Technique and Data Reduction," inle to Methods of Experimental Physics(Vol. 12, Astrophysics; Partrmly A:Optical and Infrared),N,Carleton,Ed.(Academic, New York, 1974),p.150.
 
-## 3.拟合参数曲线
+## 3.定标曲线和气溶胶反演
 
-​	将其用公式进行拟合，得到大气光学厚度。
+根据南师大那篇博士论文，计算了敦煌的数据，计算的参数有天顶角，大气质量和定标曲线。这里计算的数据来自敦煌，2018年8月7日测量的数据。
+
+| 参数 |        参数值         |
+| :--: | :-------------------: |
+| 日期 |      2018/08/07       |
+| 地点 | 敦煌(94.41°E,40.01°N) |
+| 气压 |       879.6 HPa       |
+| 气温 |          25℃          |
+
+### 天顶角计算
+
+天顶角的计算结果如下图所示，采用的方式是使用之前用过的算法五，时间采用的北京时间。
+
+![](.\img\8月7日天顶角.bmp)
+
+### 大气质量计算
+
+大气质量计算采用当前最广泛的的方法计算，这个计算方法比其他方法在天顶角小于 80° 时候的精度高。结果如下图所示。
+
+![](.\img\8月7日大气质量.bmp)
+
+### 定标曲线绘制
+
+以大气质量为横坐标，DN 的修正对数值为纵坐标作图，如下。
+
+![](.\img\8月7日定标曲线.bmp)
+
+定标曲线依据公式：
+$$
+\ln(DN(\lambda)/(\frac{d_0}{d})^2)=\ln(DN_0(\lambda))-m(\theta)\tau_{tot}(\lambda)
+$$
+使用 MATLAB 的拟合曲线工具箱，得到拟合后的结果，如下所示
+
+![](.\img\8月7日定标拟合曲线.bmp)
+
+拟合得到的参数如下所示：
+
+Linear model Poly1:
+     f(x) = p1*x + p2
+Coefficients (with 95% confidence bounds):
+       p1 =     -0.3991  (-0.4045, -0.3938)
+       p2 =       11.06  (11.05, 11.08)
+
+Goodness of fit:
+  SSE: 26.68
+  R-square: 0.9513
+  Adjusted R-square: 0.9513
+  RMSE: 0.156
+
+### 气溶胶光学厚度
+
+通过上述的计算，得到气溶胶的光学厚度如下所示
+
+![](.\img\8月7日气溶胶光学厚度.bmp)
+
+之后计算了从 8 月 1 号 ~ 10 号都有数据的表格，得到的气溶胶光学厚度如下
+
+![](.\img\0801.png)
+
+![0802](.\img\0802.png)
+
+![0803](.\img\0803.png)
+
+![0804](.\img\0804.png)
+
+![0806](.\img\0806.png)
+
+![0807](.\img\0807.png)
+
+![0808](.\img\0808.png)
+
+![0809](.\img\0809.png)
+
+![0810](.\img\0810.png)
+
