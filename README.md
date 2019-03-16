@@ -334,7 +334,7 @@ McCartney, GaussFit:A System for Least Squares and RobustEstimation (U. Texas at
 
 天顶角的计算结果如下图所示，采用的方式是使用之前用过的算法五，时间采用的北京时间。
 
-![](.\img\8月7日天顶角.bmp)
+![](./img/8月7日天顶角.bmp)
 
 ### 大气质量计算
 
