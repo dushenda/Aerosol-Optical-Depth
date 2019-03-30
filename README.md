@@ -306,17 +306,22 @@ a,b,c这三个常数决定于最小二乘法的相对误差，也就是用前面
 
 ### 参考文献
 
-[1] Kasten,"A New Table and Approximation Formula for the Relative Optical Air Mass",Arch.Meteorol.Geophys.Bioklimatol.Ser.B 14,206-223(1965).
+[1] Kasten,"A New Table and Approximation Formula for the Relative Optical AirMass" ,Arch.Meteorol. Geophys. Bioklimato l. Ser.B 14,206-223(1965).
+
 [2] R.A Miner,K.S.W.Chamption,and H.L.Pond,The ARDC Model Atmosphere,1959,Air Force Surveys in Geophysics 11(AFCRL,1959)
+
 [3] F.Link and L.Neuzil,Table of Light Trajectories in the Terrestrial Atmosphere(Hermann,Paris,1969)
+
 [4] D.E Snier and A. Goldman,Refractive Effects in Remote Sensing of Atmosphere with Infrared Transmission Spectroscopy,(Ballistic Research Labratories,June 1975)
-[5] Y. M. Treve, New Values of the Optical Air Mass and the
-Refraction and Comparison with Previous Tables," in Proceed-ings, Second Tropospheric Refraction Effects Technical ReviewMeeting, Technical Documentary Rep. ESD-TDR 64-103, May1964 (National Technical Information Service Order AD-442626), pp.5-391.
+
+[5] Y. M. Treve, New Values of the Optical Air Mass and theRefraction and Comparison with Previous Tables," in Proceed-ings, Second Tropospheric Refraction Effects Technical ReviewMeeting, Technical Documentary Rep. ESD-TDR 64-103, May1964 (National Technical Information Service Order AD-442626), pp.5-391.
+
 [6] International Organization for Standardization,Standard Atmosphere,International Standard ISO253(1972)
-[7] S.L.Valley,Handbook of Geophysics and Space Physics
-(AFCRL,1965), pp.23.
-[8] W.H.Jefferys,M.J.Fitzpatrick,B.E.McArthur,andJ.E.
-McCartney, GaussFit:A System for Least Squares and RobustEstimation (U. Texas at Austin, 1989).
+
+[7] S.L.Valley,Handbook of Geophysics and Space Physics(AFCRL,1965), pp.23.
+
+[8] W.H.Jefferys,M.J.Fitzpatrick,B.E.McArthur,andJ.E.McCartney, GaussFit:A System for Least Squares and RobustEstimation (U. Texas at Austin, 1989).
+
 [9] A.T.Young,Observational Technique and Data Reduction," inle to Methods of Experimental Physics(Vol. 12, Astrophysics; Partrmly A:Optical and Infrared),N,Carleton,Ed.(Academic, New York, 1974),p.150.
 
 ## 3.定标曲线和气溶胶反演
