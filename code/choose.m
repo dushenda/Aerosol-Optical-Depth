@@ -1,30 +1,4 @@
 function varargout = choose(varargin)
-% CHOOSE MATLAB code for choose.fig
-%      CHOOSE by itself, creates a new CHOOSE or raises the
-%      existing singleton*.
-%
-%      H = CHOOSE returns the handle to a new CHOOSE or the handle to
-%      the existing singleton*.
-%
-%      CHOOSE('CALLBACK',hObject,eventData,handles,...) calls the local
-%      function named CALLBACK in CHOOSE.M with the given input arguments.
-%
-%      CHOOSE('Property','Value',...) creates a new CHOOSE or raises the
-%      existing singleton*.  Starting from the left, property value pairs are
-%      applied to the GUI before choose_OpeningFcn gets called.  An
-%      unrecognized property name or invalid value makes property application
-%      stop.  All inputs are passed to choose_OpeningFcn via varargin.
-%
-%      *See GUI Options on GUIDE's Tools menu.  Choose "GUI allows only one
-%      instance to run (singleton)".
-%
-% See also: GUIDE, GUIDATA, GUIHANDLES
-
-% Edit the above text to modify the response to help choose
-
-% Last Modified by GUIDE v2.5 29-Nov-2018 12:02:18
-
-% Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
 gui_State = struct('gui_Name',       mfilename, ...
                    'gui_Singleton',  gui_Singleton, ...
@@ -45,22 +19,16 @@ end
 
 % --- Executes just before choose is made visible.
 function choose_OpeningFcn(hObject, eventdata, handles, varargin)
-% This function has no output args, see OutputFcn.
-% hObject    handle to figure
-% eventdata  reserved - to be defined in a future version of MATLAB
-% handles    structure with handles and user data (see GUIDATA)
-% varargin   command line arguments to choose (see VARARGIN)
+
 clc;
-% Choose default command line output for choose
+
 handles.output = 'Yes';
-
-% Update handles structure
+h = handles.figure1; %返回其句柄
+icon='../img/logo.jpg';
+newIcon = javax.swing.ImageIcon(icon);
+figFrame = get(h,'JavaFrame'); %取得Figure的JavaFrame。
+figFrame.setFigureIcon(newIcon); %修改图标
 guidata(hObject, handles);
-
-% Insert custom Title and Text if specified by the user
-% Hint: when choosing keywords, be sure they are not easily confused 
-% with existing figure properties.  See the output of set(figure) for
-% a list of figure properties.
 if(nargin > 3)
     for index = 1:2:(nargin-3),
         if nargin-3==index, break, end

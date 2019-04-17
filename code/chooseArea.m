@@ -1,30 +1,4 @@
 function varargout = chooseArea(varargin)
-% CHOOSEAREA MATLAB code for chooseArea.fig
-%      CHOOSEAREA by itself, creates a new CHOOSEAREA or raises the
-%      existing singleton*.
-%
-%      H = CHOOSEAREA returns the handle to a new CHOOSEAREA or the handle to
-%      the existing singleton*.
-%
-%      CHOOSEAREA('CALLBACK',hObject,eventData,handles,...) calls the local
-%      function named CALLBACK in CHOOSEAREA.M with the given input arguments.
-%
-%      CHOOSEAREA('Property','Value',...) creates a new CHOOSEAREA or raises the
-%      existing singleton*.  Starting from the left, property value pairs are
-%      applied to the GUI before chooseArea_OpeningFcn gets called.  An
-%      unrecognized property name or invalid value makes property application
-%      stop.  All inputs are passed to chooseArea_OpeningFcn via varargin.
-%
-%      *See GUI Options on GUIDE's Tools menu.  Choose "GUI allows only one
-%      instance to run (singleton)".
-%
-% See also: GUIDE, GUIDATA, GUIHANDLES
-
-% Edit the above text to modify the response to help chooseArea
-
-% Last Modified by GUIDE v2.5 29-Nov-2018 14:17:31
-
-% Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
 gui_State = struct('gui_Name',       mfilename, ...
                    'gui_Singleton',  gui_Singleton, ...
@@ -45,24 +19,20 @@ end
 
 % --- Executes just before chooseArea is made visible.
 function chooseArea_OpeningFcn(hObject, eventdata, handles, varargin)
-% This function has no output args, see OutputFcn.
-% hObject    handle to figure
-% eventdata  reserved - to be defined in a future version of MATLAB
-% handles    structure with handles and user data (see GUIDATA)
-% varargin   command line arguments to chooseArea (see VARARGIN)
-
-% Choose default command line output for chooseArea
+warning('off','all');
 handles.output = 'Yes';
 
 % Update handles structure
 guidata(hObject, handles);
 
-% Insert custom Title and Text if specified by the user
-% Hint: when choosing keywords, be sure they are not easily confused 
-% with existing figure properties.  See the output of set(figure) for
-% a list of figure properties.
+h = handles.figure1; %返回其句柄
+icon='../img/logo.jpg';
+newIcon = javax.swing.ImageIcon(icon);
+figFrame = get(h,'JavaFrame'); %取得Figure的JavaFrame。
+figFrame.setFigureIcon(newIcon); %修改图标
+
 if(nargin > 3)
-    for index = 1:2:(nargin-3),
+    for index = 1:2:(nargin-3)
         if nargin-3==index, break, end
         switch lower(varargin{index})
          case 'title'
@@ -73,8 +43,6 @@ if(nargin > 3)
     end
 end
 
-% Determine the position of the dialog - centered on the callback figure
-% if available, else, centered on the screen
 FigPos=get(0,'DefaultFigurePosition');
 OldUnits = get(hObject, 'Units');
 set(hObject, 'Units', 'pixels');

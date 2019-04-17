@@ -21,11 +21,12 @@ end
 % --- Executes just before start is made visible.
 function start_OpeningFcn(hObject, eventdata, handles, varargin)
 global choose;
+warning('off','all');
 % Choose default command line output for start
 handles.output = hObject;
 clc;
 h = handles.figure1; %返回其句柄
-icon='img\logo.jpg';
+icon='../img/logo.jpg';
 newIcon = javax.swing.ImageIcon(icon);
 figFrame = get(h,'JavaFrame'); %取得Figure的JavaFrame。
 figFrame.setFigureIcon(newIcon); %修改图标
@@ -33,7 +34,7 @@ figFrame.setFigureIcon(newIcon); %修改图标
 AxesBg=axes('units','pixels','pos',[0 0 960 540]); % 建立背景图像的axes
 uistack(AxesBg,'down');                             % 置于底层
 axes(AxesBg);
-ImageBg='img\background.jpg';
+ImageBg='../img/background.jpg';
 imshow(ImageBg);                                    %显示图像
 set(AxesBg,'visible','off');                        %axe外框不可见
 alpha(AxesBg,.85);
